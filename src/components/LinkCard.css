@@ -1,0 +1,113 @@
+.link-card {
+  background: #ffffff;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+
+.link-card:hover {
+  border-color: var(--ink);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 0 -4px var(--accent), 0 14px 28px rgba(20, 21, 15, 0.12);
+}
+
+.link-card-top {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.favicon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--surface-hover);
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 1.5px solid var(--border);
+}
+
+.link-card-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.link-title {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.link-title:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+}
+
+.link-host {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-desc {
+  color: var(--text-secondary);
+  font-size: 0.87rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.link-card-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1.5px dashed var(--border);
+}
+
+.link-action {
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.link-action:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.link-action.danger:hover {
+  color: var(--danger);
+  text-decoration-color: var(--danger);
+}

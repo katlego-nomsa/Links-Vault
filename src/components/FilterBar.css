@@ -1,0 +1,75 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-right: 2px;
+}
+
+.filter-pill {
+  background: var(--accent-bg);
+  color: #3a4a0f;
+  border: 1.5px solid var(--accent-border);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.filter-pill:hover {
+  transform: translateY(-1px);
+}
+
+.filter-pill.active {
+  background: var(--ink);
+  color: #ffffff;
+  border-color: var(--ink);
+}
+
+.filter-pill.more {
+  background: #ffffff;
+  color: var(--text-muted);
+  border-style: dashed;
+}
+
+.sort-select {
+  background: #ffffff;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sort-select {
+    align-self: flex-start;
+  }
+}
