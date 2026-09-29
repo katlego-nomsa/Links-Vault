@@ -1,4 +1,5 @@
- HEAD
+
+ 
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -152,3 +153,5 @@ Evaluation Criteria:
       * 1024px
       * 1200px
  origin/main
+
+
