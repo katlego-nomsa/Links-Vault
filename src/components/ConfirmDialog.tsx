@@ -1,5 +1,5 @@
-import Modal from './modal';
-import Button from './button';
+import Modal from './Modal';
+import Button from './Button';
 
 interface ConfirmDialogProps {
   title: string;

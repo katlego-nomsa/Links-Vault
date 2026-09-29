@@ -3,7 +3,7 @@ import type { FormEvent } from 'react';
 import type { LinkDraft, LinkItem } from '../types/index.ts';
 import Button from './Button.tsx';
 import TagPill from './TagPill.tsx';
-import './Linkform.css';
+import './LinkForm.css';
 
 interface LinkFormProps {
   initial?: LinkItem;

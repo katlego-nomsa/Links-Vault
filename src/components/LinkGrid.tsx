@@ -1,6 +1,6 @@
 import type { LinkItem } from '../types';
 import LinkCard from './LinkCard';
-import Button from './button';
+import Button from './Button';
 import './LinkGrid.css';
 
 interface LinkGridProps {
