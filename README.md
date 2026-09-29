@@ -1,4 +1,5 @@
-
+FIGMA: https://www.figma.com/design/ztZMOPzNRGpk1i8Rw1uI3M/Links-Vault?node-id=13-93&t=7MGXy1zx9XCOjlv8-0
+DEPLOYMENT: https://links-vault-557i.vercel.app/
  
 # React + TypeScript + Vite
 
